@@ -1,8 +1,0 @@
-line one
-line two
-line three
-
-## Roadmap
-1. load and read file
-2. markdown processing
-3. search function
