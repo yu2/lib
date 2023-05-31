@@ -7,7 +7,7 @@ function handleFiles() {
     const reader = new FileReader();
     reader.addEventListener("load", () => {
         let parsedText = t(reader.result);
-        document.getElementById("p1").innerText = parsedText;
+        document.getElementById("p1").innerHTML = parsedText;
 
     }, false)
 
