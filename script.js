@@ -1,3 +1,4 @@
+import t from "snarkdown.modern.js";
 
 function handleFiles() {
     const content = document.querySelector("#p1");
@@ -5,7 +6,8 @@ function handleFiles() {
     
     const reader = new FileReader();
     reader.addEventListener("load", () => {
-        document.getElementById("p1").innerText = reader.result;
+        let parsedText = t(reader.result);
+        document.getElementById("p1").innerText = parsedText;
 
     }, false)
 
